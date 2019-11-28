@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>502教室布局</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		#classroom{
+			width: 100%;
+		}
+
+		#classroom .tableone{
+			width: 600px;
+			text-align: center;
+			border-collapse: collapse;
+			margin: 100px auto;
+			animation: move 2s 1s  2 alternate;
+			cursor: pointer;
+		}
+		@keyframes move{
+			from{ transform: rotate(0deg) scale(0.9); }
+			to{ transform: rotate(360deg) scale(1.2); }
+		}
+		#classroom .tableone tr td{
+			width: 100px;
+			height: 50px
+		}
+
+		.green{
+			color: green;
+			background-color: lightblue;
+			transition: all 2s;
+		}
+		.green:hover{
+			color: blue;
+			transform: rotate(360deg) scale(1.4);
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<div id="classroom">
+		<table class="tableone" cellpadding="0"; cellspacing="0" border="1">
+			<tr>
+				<td colspan="3" align="center"></td>
+				<td colspan="2">讲台</td>
+
+			</tr>
+
+			<tr>
+				<td></td>
+				<td class="green">钟华金</td>
+				<td  rowspan="10">过道</td>
+				<td></td>
+				<td class="green">武长斌</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td class="green">陈钊汶</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td class="green">陈志杰</td>
+				<td class="green">黄敏桓</td>
+				<td class="green">吴靖辉</td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td class="green">杨杰沛</td>
+				<td class="green">林郁腾</td>
+				<td class="green">陈泽杰</td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td class="green">周伯涛</td>
+				<td class="green">徐庆烽</td>
+				<td></td>
+				<td class="green">邓国东</td>
+			</tr>
+
+			<tr>
+				<td class="green">黄子杰</td>
+				<td ></td>
+				<td class="green">李捷东</td>
+				<td class="green">张帆</td>
+			</tr>
+
+			<tr>
+				<td class="green">齐云飞</td>
+				<td class="green">邓富铖</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td ></td>
+				<td></td>
+				<td></td>
+				<td class="green">吴瑞森</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td rowspan="2" colspan="2">柱子</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+
